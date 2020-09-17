@@ -1,0 +1,14 @@
+.form{
+    background-color:white;
+    width:40%;
+    height: 250px;
+    border-radius:5px;
+    margin-left: 28%;
+    margin-right:28%;
+    margin-top:10%;
+}
+.startBooking{
+    padding:10px 60px;
+    background-color:yellow;
+    border-radius:5px;
+}
