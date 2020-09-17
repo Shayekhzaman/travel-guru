@@ -27,6 +27,7 @@ const Login = () => {
     })
 
     const provider = new firebase.auth.GoogleAuthProvider();
+    const fbProvider = new firebase.auth.FacebookAuthProvider();
 
 
     const signWithGoogle = () => {
@@ -43,6 +44,21 @@ const Login = () => {
                 console.log(err.message);
             })
     }
+    const signWithFacebook= ()=>{
+        firebase.auth().signInWithPopup(fbProvider).then(function(result) {
+            // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+            var token = result.credential.accessToken;
+            // The signed-in user info.
+            var user = result.user;
+            console.log(user);
+            // ...
+          }).catch(error=> {
+            
+           console.log(error);
+           console.log(error.message);
+          });
+    }
+
     const handleBlur = (e) => {
         let isFieldValid = true;
         if (e.target.name === 'email') {
@@ -93,6 +109,8 @@ const Login = () => {
             </form>
             <div className='submit'>
                 <input onClick={signWithGoogle} type="button" value="Continue with Google" />
+                <br/>
+                <input onClick={signWithFacebook} type="button" value="Continue with Facebook"/>
 
             </div>
         </div>
