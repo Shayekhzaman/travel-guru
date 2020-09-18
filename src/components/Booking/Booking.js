@@ -6,6 +6,7 @@ import './Booking.css';
 
 const Booking = (props) => {
     const history = useHistory();
+
     const startBooking=()=>{
         history.push('/hotel');
     }

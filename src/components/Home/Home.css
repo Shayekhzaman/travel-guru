@@ -58,10 +58,6 @@ nav a{
     margin-left:30px;
     
 }
-
-input:hover{
-    border: 5px solid yellow;
-}
 .destinationArea{
     margin-top:80px;
 }
@@ -70,4 +66,7 @@ input:hover{
     text-align:center;
     font-size:20px;
     border-radius:10px;
+}
+.destinationArea input:hover{
+    border: 5px solid yellow;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import { FormControl } from 'react-bootstrap';
 import Logo from '../../image/Logo.png';
 import './Home.css'
-import { useHistory } from 'react-router-dom';
+import { useHistory, useParams } from 'react-router-dom';
 
 
 
@@ -10,8 +10,9 @@ const Home = () => {
   const history = useHistory();
   
   const destinationHandle =(props)=>{
-   history.push("/booking/{props}");
+   history.push("/booking/destination");
     console.log(props);
+  
     
   }
   
