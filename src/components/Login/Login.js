@@ -45,25 +45,7 @@ const Login = () => {
                 console.log(err.message);
             })
     }
-    const handleSignedOut = () => {
-        firebase.auth().signOut()
-            .then(res => {
-                const signedOutUser = {
-                    isSignedIn: false,
-                    name: '',
-                    email: '',
-                    photo: '',
-                    error: '',
-                    success: false
-                }
-                setUser(signedOutUser);
-            })
-            .catch(error => {
-                console.log(error.message);
-            })
-
-
-    }
+    
 
     const signWithFacebook = () => {
 
@@ -98,15 +80,13 @@ const Login = () => {
                     newUserInfo.success = true;
                     setLoggedInUser(newUserInfo);
                     history.replace(from);
-                    //   updateUserName(user.name);
                 })
                 .catch(error => {
-                    // Handle Errors here.
                     const newUserInfo = { ...user };
                     newUserInfo.error = error.message;
                     newUserInfo.success = false;
                     setLoggedInUser(newUserInfo);
-                    // ...
+                  
                 });
         }
         if (!newUser && user.email && user.password) {
@@ -162,7 +142,7 @@ const Login = () => {
                 <br />
                 <input className="signIn" onClick={signWithFacebook} type="button" value="Continue with Facebook" />
             </div>
-            <p style={{ color: 'red' }}>{user.error}</p>
+            
         </div>
     );
 };
