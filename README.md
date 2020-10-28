@@ -1,3 +1,27 @@
+# Travel Guru
+
+[live hosting link](https://travel-guru-c9e3b.web.app/).
+
+## Features Scripts
+1. The website perform as hotel booking task.In sundarban,coxs bazar and sylet area are available here.
+2. When user want to book the hotel then the user must be loge in the website by google authentication.
+3. User book the hotel and the user data stored on database which data access the admin.
+4. This website have three types login authentication ,there are facebook, google and email.
+5. This is full stack web project 
+
+## Language and tools
+* React Js
+* ReactDOM
+* javascript
+* node Js
+* MongoDB
+* Bootstrap 
+* HTML 
+* CSS 
+* Firebase 
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
