@@ -1,0 +1,23 @@
+form{
+    text-align: center;
+    margin-top: 20px;
+}
+.submit{
+    text-align: center;
+   
+}
+.newSign{
+    text-align: center;
+    margin-top: 60px;
+}
+.input {
+    height: 35px;
+    width:300px;
+    margin-top:20px;
+}
+.signIn{
+    background-color: yellow;
+    padding:10px 15px 10px 15px;
+    border-radius:5px;
+    margin-top:20px;
+}
